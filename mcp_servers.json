@@ -1,0 +1,28 @@
+{
+  "servers": {
+    "filesystem": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-filesystem", "./workspace"],
+      "description": "Read/write files in the workspace directory",
+      "requires_auth": false
+    },
+    "fetch": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-fetch"],
+      "description": "Fetch and parse web pages into readable text",
+      "requires_auth": false
+    },
+    "sequential_thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"],
+      "description": "Break complex problems into step-by-step reasoning",
+      "requires_auth": false
+    },
+    "weather": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-weather"],
+      "description": "Real-time weather data and forecasts",
+      "requires_auth": false
+    }
+  }
+}
