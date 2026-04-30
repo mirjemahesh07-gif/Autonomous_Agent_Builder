@@ -1,0 +1,9 @@
+{
+  "name": "web_search",
+  "tool_type": "openapi",
+  "validated": true,
+  "schema_path": "C:\\Users\\MrMaheshMirje\\Desktop\\Agent_Builder_New\\tool_registry\\openapi\\web_search.json",
+  "description": "Search the web and return top results",
+  "auto_generated": true,
+  "source": "catalogue"
+}

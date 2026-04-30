@@ -1,0 +1,44 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "title": "web_search",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/web_search": {
+      "post": {
+        "operationId": "web_search",
+        "summary": "Search the web and return top results",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "query": {
+                    "type": "string",
+                    "description": "The search query"
+                  },
+                  "num_results": {
+                    "type": "string",
+                    "description": "Number of results to return"
+                  }
+                },
+                "required": [
+                  "query",
+                  "num_results"
+                ]
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  }
+}
